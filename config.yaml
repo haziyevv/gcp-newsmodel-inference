@@ -1,0 +1,4 @@
+tokenizer_name: heziyevv/aze-bert-tokenizer-large
+model_name: aze-ds-model-first
+max_seq_length: 256
+bucket_name: azenews-bucket
