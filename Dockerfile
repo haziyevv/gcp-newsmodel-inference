@@ -7,8 +7,8 @@ WORKDIR $WORKDIR
 
 COPY requirements.txt ${WORKDIR}/requirements.txt
 COPY config.yaml ${WORKDIR}/config.yaml
-COPY gcp_training ${WORKDIR}/gcp_training
+COPY gcp_inference ${WORKDIR}/gcp_inference
 COPY aze-ds-model-first ${WORKDIR}/aze-ds-model-first
 
 RUN pip install -r requirements.txt
-ENTRYPOINT ["python3", "-m", "gcp_training"]
+ENTRYPOINT ["python3", "-m", "gcp_inference"]
